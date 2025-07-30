@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoped Bootstrap Demo</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Unscoped Bootstrap</h2>
+      <p>
+        This is an unscoped area. The styles below should not be affected by the
+        scoped Bootstrap CSS.
+      </p>
+      <button class="btn btn-primary">Unscoped Button</button>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Unscoped Input"
+        style="width: 200px; display: inline-block; margin-left: 10px"
+      />
+      <div class="card" style="width: 18rem; margin-top: 1rem">
+        <div class="card-body">
+          <h5 class="card-title">Unscoped Card</h5>
+          <p class="card-text">This card should not have Bootstrap styles.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bootstrap-scope">
+      <h2>Scoped Bootstrap</h2>
+      <p>
+        This is a scoped area. The styles below should be affected by the scoped
+        Bootstrap CSS.
+      </p>
+      <button class="btn btn-primary">Scoped Button</button>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Scoped Input"
+        style="width: 200px; display: inline-block; margin-left: 10px"
+      />
+      <div class="card" style="width: 18rem; margin-top: 1rem">
+        <div class="card-body">
+          <h5 class="card-title">Scoped Card</h5>
+          <p class="card-text">This card should have Bootstrap styles.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

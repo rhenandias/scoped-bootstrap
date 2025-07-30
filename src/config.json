@@ -1,0 +1,6 @@
+{
+  "scopePrefix": "bootstrap-scope",
+  "inputDir": "input",
+  "outputDir": "output",
+  "sourcePath": "node_modules/bootstrap/dist/css/bootstrap.css"
+}

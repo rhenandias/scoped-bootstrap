@@ -26,7 +26,7 @@ function main() {
 
     // 4 - Apply regex replacement to scope selectors
     const scopedCss = cssContent.replace(
-      /((,|\}|\*\/)[\s\r\n]*)((:root)|((\.|#|::|:)[a-zA-Z0-9_-]+|[a-zA-Z]+|\*|\[[^\]]*\]))(?=[^\}\{]*\{)/g,
+      /((,|\{|\}|\*\/)[\s\r\n]*)((:root)|((\.|#|::|:)[a-zA-Z0-9_-]+|[a-zA-Z]+|\*|\[[^\]]*\]))(?=[^\}\{]*\{)/g,
       `$1.${scopePrefix} $5`
     );
 

@@ -6216,7 +6216,7 @@
 }
 
 @keyframes spinner-border {
-  .bootstrap-scope to {
+  to {
     transform: rotate(360deg) /* rtl:ignore */;
   }
 }
